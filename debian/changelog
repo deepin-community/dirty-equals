@@ -1,5 +1,60 @@
-template-repository (1.0-1) unstable; urgency=medium
+dirty-equals (0.7.1-2) unstable; urgency=medium
 
-  * Initial release
+  * Team Upload
+  * v7.1 needs Pydantic 2.x
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Alexandre Detiste <tchet@debian.org>  Mon, 22 Jul 2024 10:39:48 +0200
+
+dirty-equals (0.7.1-1) unstable; urgency=medium
+
+  * Team Upload
+  * New upstream version 0.7.1
+
+ -- Alexandre Detiste <tchet@debian.org>  Sat, 20 Jul 2024 19:21:34 +0200
+
+dirty-equals (0.7.0-2) unstable; urgency=medium
+
+  * Patch code and tests to work with Python 3.12. (Closes: #1058337)
+
+ -- Edward Betts <edward@4angle.com>  Wed, 27 Dec 2023 08:41:37 +0000
+
+dirty-equals (0.7.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Edward Betts <edward@4angle.com>  Thu, 07 Sep 2023 20:41:56 +0100
+
+dirty-equals (0.6.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update copyright year.
+  * Update Standards-Version.
+  * Skip new test that needs pytest-examples, because it is not packaged.
+
+ -- Edward Betts <edward@4angle.com>  Sat, 29 Apr 2023 13:29:48 +0100
+
+dirty-equals (0.5.0-2) unstable; urgency=medium
+
+  * Fix test failure by setting TZ=utc when running tests.
+
+ -- Edward Betts <edward@4angle.com>  Mon, 12 Sep 2022 21:27:10 +0100
+
+dirty-equals (0.5.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add new Build-Depends on python3-hatchling.
+  * Remove python3-poetry-core and python3-setuptools from Build-Depends.
+
+ -- Edward Betts <edward@4angle.com>  Sat, 03 Sep 2022 07:47:24 +0100
+
+dirty-equals (0.4-2) unstable; urgency=medium
+
+  * Source-only upload to allow package to migrate to testing.
+
+ -- Edward Betts <edward@4angle.com>  Wed, 10 Aug 2022 12:21:00 +0100
+
+dirty-equals (0.4-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #1016204)
+
+ -- Edward Betts <edward@4angle.com>  Wed, 03 Aug 2022 11:01:39 +0100

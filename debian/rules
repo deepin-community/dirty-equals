@@ -1,4 +1,19 @@
 #!/usr/bin/make -f
 
+export PYBUILD_NAME=dirty-equals
+export PYBUILD_TEST_PYTEST=1
+export PYBUILD_TEST_ARGS=--ignore=tests/test_docs.py
+
 %:
-	dh $@
+	dh $@ --buildsystem=pybuild
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -rf dirty_equals.egg-info/
+
+execute_before_dh_installdeb:
+	rm -rf $(CURDIR)/debian/python3-dirty-equals/usr/lib/python3/dist-packages/dirty_equals-0.5.0.dist-info/licenses/
+
+override_dh_auto_test:
+	TZ=utc dh_auto_test
+	rm -r ./.pybuild/*/build/.pytest_cache
